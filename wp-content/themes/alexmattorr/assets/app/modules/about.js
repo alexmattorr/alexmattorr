@@ -7,19 +7,21 @@ function aboutToggle() {
 			active = 'is-active';
 
 	item.on('click', function() {
-		// stops active item from being clicked
-		if ($(this).hasClass(active)) return false;
+		if ( $(this).hasClass(active) ) {
+			$(this).removeClass(active);
+			$(this).find('ul').slideUp('fast');
 
-		// removes the active class and adds to one clicked
-		item.removeClass(active);
-		$(this).addClass(active);
+			itemIconClose.removeClass(active);
+			itemIconOpen.addClass(active);
+		} else {
+			item.removeClass(active);
+			$(this).addClass(active);
+			subItems.slideUp('fast');
+			$(this).find('ul').slideDown('fast');
 
-		itemIconClose.removeClass(active);
-		itemIconOpen.addClass(active);
-		$(this).find('span').toggleClass(active);
-
-		// slides items
-		subItems.slideUp('fast');
-		$(this).find('ul').slideDown('fast');
+			itemIconClose.removeClass(active);
+			itemIconOpen.addClass(active);
+			$(this).find('span').toggleClass(active);
+		}
 	});
 }
