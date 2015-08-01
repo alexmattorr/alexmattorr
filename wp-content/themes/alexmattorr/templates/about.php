@@ -10,7 +10,8 @@
 		<ul class="about-skills">
 			<li class="about-skill">
 				<h5>HTML5</h5>
-				<span class="toggle-sub-skill">+</span>
+				<span class="about-skill-icon skill-icon-open is-active">+</span>
+				<span class="about-skill-icon skill-icon-close">-</span>
 				<ul>
 					<li>Something</li>
 					<li>Something</li>
@@ -21,7 +22,8 @@
 			</li>
 			<li class="about-skill">
 				<h5>CSS3</h5>
-				<span class="toggle-sub-skill">+</span>
+				<span class="about-skill-icon skill-icon-open is-active">+</span>
+				<span class="about-skill-icon skill-icon-close">-</span>
 				<ul>
 					<li>Something</li>
 					<li>Something</li>
@@ -32,8 +34,9 @@
 			</li>
 			<li class="about-skill">
 				<h5>JavaScript</h5>
-				<span class="toggle-sub-skill">+</span>
-				<ul>
+				<span class="about-skill-icon skill-icon-open is-active">+</span>
+				<span class="about-skill-icon skill-icon-close">-</span>
+			<ul>
 					<li>Something</li>
 					<li>Something</li>
 					<li>Something</li>
@@ -43,7 +46,8 @@
 			</li>
 			<li class="about-skill">
 				<h5>PHP</h5>
-				<span class="toggle-sub-skill">+</span>
+				<span class="about-skill-icon skill-icon-open is-active">+</span>
+				<span class="about-skill-icon skill-icon-close">-</span>
 				<ul>
 					<li>Something</li>
 					<li>Something</li>
@@ -54,7 +58,8 @@
 			</li>
 			<li class="about-skill">
 				<h5>MySQL</h5>
-				<span class="toggle-sub-skill">+</span>
+				<span class="about-skill-icon skill-icon-open is-active">+</span>
+				<span class="about-skill-icon skill-icon-close">-</span>
 				<ul>
 					<li>Something</li>
 					<li>Something</li>

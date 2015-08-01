@@ -1,5 +1,7 @@
 .about-item {
 	@include col(1/2);
+	p { margin-bottom: rem(25px); }
+	@include mobile() { width: 100%; }
 }
 
 .about-skills {
@@ -9,6 +11,9 @@
 
 	background: gray; // change;
 	border: 1px solid gray; // change color
+
+	@include mobile() { max-width: initial; }
+
 	.about-skill {
 		// clearfix (mixin not working)
 		overflow: auto;
@@ -23,9 +28,14 @@
 			margin: 0;
 		}
 		span {
-			display: inline-block;
+			display: none;
 			float: right;
+			&.is-active { display: inline-block; }
 		}
 		ul { display: none; }
+		li {
+			padding: 0 rem(5px) rem(5px) rem(5px);
+			&:first-child { padding-top: rem(10px); }
+		}
 	}
 }

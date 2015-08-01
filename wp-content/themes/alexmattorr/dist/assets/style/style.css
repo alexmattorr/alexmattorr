@@ -849,12 +849,28 @@ aside ul li.is-active svg {
   margin-right: 0;
 }
 
+.about-item p {
+  margin-bottom: 1.5625rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-item {
+    width: 100%;
+  }
+}
+
 .about-skills {
   max-width: 18.75rem;
   width: 100%;
   margin: 0 auto;
   background: gray;
   border: 1px solid gray;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-skills {
+    max-width: initial;
+  }
 }
 
 .about-skills .about-skill {
@@ -875,12 +891,24 @@ aside ul li.is-active svg {
 }
 
 .about-skills .about-skill span {
-  display: inline-block;
+  display: none;
   float: right;
+}
+
+.about-skills .about-skill span.is-active {
+  display: inline-block;
 }
 
 .about-skills .about-skill ul {
   display: none;
+}
+
+.about-skills .about-skill li {
+  padding: 0 0.3125rem 0.3125rem 0.3125rem;
+}
+
+.about-skills .about-skill li:first-child {
+  padding-top: 0.625rem;
 }
 
 @font-face {
