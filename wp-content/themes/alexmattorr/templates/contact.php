@@ -20,15 +20,11 @@
 				<a href="https://github.com/alexsmander" target="_blank">
 					<i class="fa fa-github-alt fa-lg"></i>
 				</a>
-			</li>
-
-			<li>
+			</li><li>
 				<a href="https://www.linkedin.com/in/alexmattorr" target="_blank">
 					<i class="fa fa-linkedin fa-lg"></i>
 				</a>
-			</li>
-
-			<li>
+			</li><li>
 				<a href="https://twitter.com/alexmattorr" target="_blank">
 					<i class="fa fa-twitter fa-lg"></i>
 				</a>

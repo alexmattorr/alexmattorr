@@ -1,0 +1,31 @@
+.about-item {
+	@include col(1/2);
+}
+
+.about-skills {
+	max-width: rem(300px);
+	width: 100%;
+	margin: 0 auto;
+
+	background: gray; // change;
+	border: 1px solid gray; // change color
+	.about-skill {
+		// clearfix (mixin not working)
+		overflow: auto;
+	  zoom: 1;
+
+		padding: rem(10px);
+		border-bottom: 1px solid white; // change color
+		cursor: pointer;
+		&:last-child { border-bottom: 0px; }
+		h5 {
+			display: inline-block;
+			margin: 0;
+		}
+		span {
+			display: inline-block;
+			float: right;
+		}
+		ul { display: none; }
+	}
+}

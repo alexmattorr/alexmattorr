@@ -8,6 +8,21 @@ var app = (function() {
 $(function() {
 	new app.base();
 })
+function aboutToggle() {
+	var item = $('.about-skill'),
+			subItems = $('.about-skill ul'),
+			active = 'is-active';
+
+	item.on('click', function() {
+		if ($(this).hasClass(active)) return false;
+
+		item.removeClass(active);
+		$(this).addClass(active);
+
+		subItems.slideUp('fast');
+		$(this).find('ul').slideDown('fast');
+	});
+}
 // base functions
 app.base = (function($, _ , app) {
 
@@ -24,6 +39,7 @@ app.base = (function($, _ , app) {
 	var init = function(){
 		this.navScroller();
 		this.sideBar();
+		this.about();
 	};
 
 	def.prototype = {
@@ -41,6 +57,10 @@ app.base = (function($, _ , app) {
 
 		sideBar: function() {
 			sideToggle();
+		},
+
+		about: function() {
+			aboutToggle();
 		}
 	};
 

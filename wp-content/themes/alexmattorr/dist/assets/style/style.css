@@ -526,8 +526,6 @@ a {
 }
 
 .work-wrapper:hover .work-item {
-  -webkit-filter: grayscale(35%);
-  filter: grayscale(35%);
   -webkit-box-shadow: 0 8px 16px 0 rgba(21, 21, 21, 0.2), 0 6px 20px 0 rgba(21, 21, 21, 0.19) !important;
   box-shadow: 0 8px 16px 0 rgba(21, 21, 21, 0.2), 0 6px 20px 0 rgba(21, 21, 21, 0.19) !important;
 }
@@ -548,14 +546,14 @@ a {
   margin-bottom: 0.9375rem;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-box-shadow: 0 2px 4px 0 rgba(21, 21, 21, 0.16), 0 2px 10px 0 rgba(21, 21, 21, 0.12) !important;
   box-shadow: 0 2px 4px 0 rgba(21, 21, 21, 0.16), 0 2px 10px 0 rgba(21, 21, 21, 0.12) !important;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-filter;
-  transition-property: box-shadow, -webkit-filter;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
   -webkit-transition-timing-function: ease-in-out;
@@ -837,6 +835,52 @@ aside ul li.is-active svg {
 
 .contact .contact-info .contact-location span {
   font-weight: 600;
+}
+
+.about-item {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.about-item:last-child {
+  margin-right: 0;
+}
+
+.about-skills {
+  max-width: 18.75rem;
+  width: 100%;
+  margin: 0 auto;
+  background: gray;
+  border: 1px solid gray;
+}
+
+.about-skills .about-skill {
+  overflow: auto;
+  zoom: 1;
+  padding: 0.625rem;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.about-skills .about-skill:last-child {
+  border-bottom: 0px;
+}
+
+.about-skills .about-skill h5 {
+  display: inline-block;
+  margin: 0;
+}
+
+.about-skills .about-skill span {
+  display: inline-block;
+  float: right;
+}
+
+.about-skills .about-skill ul {
+  display: none;
 }
 
 @font-face {
