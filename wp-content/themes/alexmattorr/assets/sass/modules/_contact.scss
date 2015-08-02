@@ -33,32 +33,34 @@
 				&:hover { color: $d-green; }
 			}
 		}
-		.contact-social {
-			@include cf();
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			li {
-				display: block;
-				float: left;
-				padding: rem(13px) 0;
-				a {
-					padding: rem(10px) rem(14px);
-					background: $green;
-					transition-property: background;
-					transition-duration: .3s;
-					.fa {
-						color: $white;
-					}
-				}
-				&:hover { a { background: $d-green; } }
-			}
-		}
+		
 		.contact-location {
 			position: absolute;
 			bottom: 0;
 			font-size: rem(14px);
 			span { font-weight: $font-bold; }
+		}
+	}
+
+	.contact-social {
+		@include cf();
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		li {
+			display: block;
+			float: left;
+			padding: rem(13px) 0;
+			a {
+				padding: rem(10px) rem(14px);
+				background: $green;
+				transition-property: background;
+				transition-duration: .3s;
+				.fa {
+					color: $white;
+				}
+			}
+			&:hover { a { background: $d-green; } }
 		}
 	}
 }

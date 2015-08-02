@@ -671,9 +671,22 @@ aside ul li.is-active svg {
   position: relative;
   width: 100%;
   height: 90vh !important;
-  padding-top: 9.375rem !important;
+  padding-top: 7.8125rem !important;
   background: transparent !important;
   text-align: center;
+}
+
+.top img {
+  width: 12.5rem;
+  margin-bottom: 3.125rem;
+  border-radius: 50%;
+  border: 0.3125rem solid #1bc09f;
+}
+
+@media only screen and (max-width: 767px) {
+  .top img {
+    margin-bottom: 0;
+  }
 }
 
 .top h1,
@@ -793,46 +806,6 @@ aside ul li.is-active svg {
   color: #16A085;
 }
 
-.contact .contact-info .contact-social {
-  *zoom: 1;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.contact .contact-info .contact-social:before,
-.contact .contact-info .contact-social:after {
-  content: '';
-  display: table;
-}
-
-.contact .contact-info .contact-social:after {
-  clear: both;
-}
-
-.contact .contact-info .contact-social li {
-  display: block;
-  float: left;
-  padding: 0.8125rem 0;
-}
-
-.contact .contact-info .contact-social li a {
-  padding: 0.625rem 0.875rem;
-  background: #1bc09f;
-  -webkit-transition-property: background;
-  transition-property: background;
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s;
-}
-
-.contact .contact-info .contact-social li a .fa {
-  color: #FFF;
-}
-
-.contact .contact-info .contact-social li:hover a {
-  background: #16A085;
-}
-
 .contact .contact-info .contact-location {
   position: absolute;
   bottom: 0;
@@ -841,6 +814,46 @@ aside ul li.is-active svg {
 
 .contact .contact-info .contact-location span {
   font-weight: 600;
+}
+
+.contact .contact-social {
+  *zoom: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.contact .contact-social:before,
+.contact .contact-social:after {
+  content: '';
+  display: table;
+}
+
+.contact .contact-social:after {
+  clear: both;
+}
+
+.contact .contact-social li {
+  display: block;
+  float: left;
+  padding: 0.8125rem 0;
+}
+
+.contact .contact-social li a {
+  padding: 0.625rem 0.875rem;
+  background: #1bc09f;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.contact .contact-social li a .fa {
+  color: #FFF;
+}
+
+.contact .contact-social li:hover a {
+  background: #16A085;
 }
 
 .about-item {
@@ -866,7 +879,7 @@ aside ul li.is-active svg {
 }
 
 .about-skills {
-  max-width: 18.75rem;
+  max-width: 21.875rem;
   width: 100%;
   margin: 0 auto;
   border: 1px solid #D8D8D8;
