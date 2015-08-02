@@ -753,13 +753,7 @@ aside ul li.is-active svg {
 }
 
 .contact .contact-info li {
-  padding: 0.3125rem 0;
-}
-
-.contact .contact-info li span {
-  padding-right: 0.625rem;
-  font-size: 0.875rem;
-  font-weight: 600;
+  padding: 0.625rem 0;
 }
 
 .contact .contact-info li a {
@@ -982,6 +976,147 @@ aside ul li.is-active svg {
   padding: 0.3125rem;
   font-size: 0.8rem;
   font-weight: 600;
+}
+
+#go-home {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.9375rem;
+  padding: 0.625rem;
+  cursor: pointer;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+#go-home svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: #FFF;
+}
+
+#go-home:hover {
+  background: rgba(21, 21, 21, 0.3);
+}
+
+.work-page-item {
+  *zoom: 1;
+  display: none;
+  max-width: 75.625rem;
+  width: 80%;
+  margin: 6.25rem auto 0 auto;
+  background: #FFF;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(21, 21, 21, 0.16), 0 2px 10px 0 rgba(21, 21, 21, 0.12) !important;
+  box-shadow: 0 2px 4px 0 rgba(21, 21, 21, 0.16), 0 2px 10px 0 rgba(21, 21, 21, 0.12) !important;
+}
+
+.work-page-item:before,
+.work-page-item:after {
+  content: '';
+  display: table;
+}
+
+.work-page-item:after {
+  clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-page-item {
+    margin-bottom: 1.5625rem;
+  }
+}
+
+.work-page-item.is-active {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-page-item {
+    width: 90%;
+  }
+}
+
+.work-page-item .work-hero {
+  width: 100%;
+  min-height: 18.75rem;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top center;
+  border-bottom: 0.0625rem solid #444;
+}
+
+.work-page-item .work-info {
+  *zoom: 1;
+  position: relative;
+  padding: 1.25rem;
+}
+
+.work-page-item .work-info:before,
+.work-page-item .work-info:after {
+  content: '';
+  display: table;
+}
+
+.work-page-item .work-info:after {
+  clear: both;
+}
+
+.work-page-item .work-info h5 {
+  font-weight: 600;
+}
+
+.work-page-item .work-info h6 {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.work-page-item .work-info a {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  padding: 0.625rem 0.9375rem;
+  background: #1bc09f;
+  color: #FFF;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.work-page-item .work-info a:hover {
+  background: #16A085;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-page-item .work-info h6 {
+    margin-bottom: 2.1875rem;
+  }
+
+  .work-page-item .work-info a {
+    position: static;
+  }
+}
+
+.work-page-item .work-info .work-info-item {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.work-page-item .work-info .work-info-item:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-page-item .work-info .work-info-item {
+    width: 100%;
+    margin-top: 2.1875rem;
+  }
 }
 
 @font-face {
