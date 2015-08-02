@@ -735,66 +735,20 @@ aside ul li.is-active svg {
   }
 }
 
-.contact {
-  width: auto;
-  max-width: 1210px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  *zoom: 1;
-  position: relative;
-  height: 100%;
-  background: #FFF;
-  margin-bottom: 6.25rem;
-}
-
-.contact:before,
-.contact:after {
-  content: '';
-  display: table;
-}
-
-.contact:after {
-  clear: both;
-}
-
-.contact h6 {
-  font-size: 0.875rem;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.contact .contact-image {
-  float: left;
-  clear: none;
-  width: 33.33333%;
-  margin-left: 0;
-  margin-right: 0;
-  height: 100%;
-  min-height: 15.625rem;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center top;
-}
-
 .contact .contact-info {
   float: left;
   clear: none;
-  width: 66.66667%;
+  width: 40%;
   margin-left: 0;
   margin-right: 0;
-  padding: 3.125rem 1.25rem;
+  margin-bottom: 1.5625rem;
 }
 
-.contact .contact-info .contact-item {
-  display: block;
-  padding-bottom: 0.9375rem;
+.contact .contact-info li {
+  padding-top: 0.625rem;
 }
 
-.contact .contact-info .contact-item a {
+.contact .contact-info li a {
   color: #1bc09f;
   -webkit-transition-property: color;
   transition-property: color;
@@ -802,17 +756,69 @@ aside ul li.is-active svg {
   transition-duration: .3s;
 }
 
-.contact .contact-info .contact-item a:hover {
+.contact .contact-info li a:hover {
   color: #16A085;
 }
 
-.contact .contact-info .contact-location {
+.contact .contact-form {
+  float: left;
+  clear: none;
+  width: 60%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact .contact-form form {
+  width: 80%;
+  float: right;
+}
+
+.contact .contact-form form input,
+.contact .contact-form form textarea {
+  width: 100%;
+  margin-bottom: 0.625rem;
+  padding: 0.625rem;
+  background: #F9F9F9;
+  border: 0.0625rem solid transparent;
+}
+
+.contact .contact-form form input:focus,
+.contact .contact-form form textarea:focus {
+  outline: 0;
+  border-bottom: 0.0625rem solid #1bc09f;
+}
+
+.contact .contact-form form .wpcf7-submit {
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+.contact .contact-form form .wpcf7-submit:hover {
+  background: #1bc09f;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact .contact-info,
+  .contact .contact-form {
+    width: 100%;
+  }
+
+  .contact .contact-info form,
+  .contact .contact-form form {
+    width: 100%;
+  }
+}
+
+.contact .contact-location {
   position: absolute;
-  bottom: 0;
+  bottom: 0.9375rem;
   font-size: 0.875rem;
 }
 
-.contact .contact-info .contact-location span {
+.contact .contact-location span {
   font-weight: 600;
 }
 

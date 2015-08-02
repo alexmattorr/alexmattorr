@@ -1,23 +1,22 @@
 <section class="contact wrapper" id="contact">
 		<h3 class="title">contact</h3>
 
-	<div class="contact-info">
-		<div class="contact-item">
-			<a href="mailto:alexmattorr@gmail.com">alexmattorr@gmail.com</a>
-		</div>
+	<article class="contact-info">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto qui non labore, ex nemo, est optio explicabo perspiciatis dolorem eaque dolores. Nesciunt voluptatem, odio modi maiores repellat illo, dolorem suscipit.</p>
 
-		<div class="contact-item">
-			<a href="tel:4153149497">(415) 314 9497</a>
-		</div>
+		<ul>
+			<li><a href="mailto:alexmattorr@gmail.com">alexmattorr@gmail.com</a></li>
+			<li><a href="tel:4153149497">(415) 314 9497</a></li>
+		</ul>
 
 		<div class="contact-item contact-location">
 			Salt Lake City, <span>UT</span>
 		</div>
-	</div>
+	</article>
 
-	<div class="contact-form">
-		
-	</div>
+	<article class="contact-form">
+		<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact Form"]' ); ?>
+	</article>
 
 	<ul class="contact-social">
 			<li>
