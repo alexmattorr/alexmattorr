@@ -9,8 +9,7 @@
 	width: 100%;
 	margin: 0 auto;
 
-	background: gray; // change;
-	border: 1px solid gray; // change color
+	border: 1px solid $d-gray;
 
 	@include mobile() { max-width: initial; }
 
@@ -20,21 +19,33 @@
 	  zoom: 1;
 
 		padding: rem(10px);
-		border-bottom: 1px solid white; // change color
+		background: $l-gray;
+		border-bottom: 1px solid $d-gray;
 		cursor: pointer;
+
 		&:last-child { border-bottom: 0px; }
 		h5 {
 			display: inline-block;
+			vertical-align: middle;
 			margin: 0;
+			font-size: 1rem;
+			font-weight: $font-bold;
 		}
 		span {
 			display: none;
 			float: right;
+			svg {
+				width: rem(18px);
+				height: rem(18px);
+				stroke: $coal;
+			}
 			&.is-active { display: inline-block; }
 		}
 		ul { display: none; }
 		li {
 			padding: 0 rem(5px) rem(5px) rem(5px);
+			font-size: 0.8rem;
+			font-weight: $font-bold;
 			&:first-child { padding-top: rem(10px); }
 		}
 	}

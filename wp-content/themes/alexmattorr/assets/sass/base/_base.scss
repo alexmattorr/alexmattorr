@@ -44,6 +44,7 @@ nav { ul { @include reset-list(); } }
   @include cf();
   width: 100%;
   padding: rem(50px) rem(20px);
+  margin-bottom: rem(25px);
   background: $white;
   &#work { margin-bottom: rem(25px); }
   .title {
@@ -52,7 +53,6 @@ nav { ul { @include reset-list(); } }
   }
 
 	@include tablet() {
-    margin-bottom: rem(25px);
 		padding: rem(50px) 4%;
     box-shadow: 0 2px 4px 0 rgba($d-coal,0.16),0 2px 10px 0 rgba($d-coal,0.12) !important;
     &:first-child {

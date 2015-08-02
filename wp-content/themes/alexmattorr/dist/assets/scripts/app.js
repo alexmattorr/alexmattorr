@@ -15,7 +15,15 @@ function aboutToggle() {
 			itemIconOpen = $('.skill-icon-open'),
 			subItems = $('.about-skill ul'),
 			active = 'is-active';
-
+/*
+	item.each(function() {
+		var stuff = $(this).find('li').length;
+		if ( stuff == 0 ) {
+			$(this).find('span').hide();
+			$(this).find('ul').hide();
+		}
+	});
+*/
 	item.on('click', function() {
 		if ( $(this).hasClass(active) ) {
 			$(this).removeClass(active);
