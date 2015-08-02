@@ -1,9 +1,13 @@
 .about-item {
 	@include col(1/2);
 	p { margin-bottom: rem(25px); }
-	@include mobile() { width: 100%; }
+	@include mobile() { 
+		width: 100%;
+		h5 { text-align: center; }
+	}
 }
 
+.skill-header { text-align: center; }
 .about-skills {
 	max-width: rem(350px);
 	width: 100%;
@@ -43,10 +47,9 @@
 		}
 		ul { display: none; }
 		li {
-			padding: 0 rem(5px) rem(5px) rem(5px);
+			padding: rem(5px);
 			font-size: 0.8rem;
 			font-weight: $font-bold;
-			&:first-child { padding-top: rem(10px); }
 		}
 	}
 }

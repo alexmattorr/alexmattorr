@@ -1,9 +1,11 @@
 .contact {
+	position: relative;
 	.contact-info {
 		@include span(2/5);
 		margin-bottom: rem(25px);
+		ul { margin: rem(15px) 0; }
 		li {
-			padding-top: rem(10px);
+			padding: rem(10px) 0;
 			a {
 				color: $green;
 
@@ -27,6 +29,8 @@
 				background: $l-gray;
 				border: rem(1px) solid transparent;
 
+				transition-property: border;
+				transition-duration: .3s;
 				&:focus {
 					outline: 0;
 					border-bottom: rem(1px) solid $green;
@@ -39,6 +43,14 @@
 				&:hover {
 					background: $green;
 				}
+			}
+			.wpcf7-not-valid { border-bottom: rem(1px) solid $red; }
+			.wpcf7-not-valid-tip { display: none !important; }
+			.wpcf7-response-output {
+				margin-top: 0px;
+				border: none;
+				font-size: rem(12px);
+				line-height: rem(18px);
 			}
 		}
 	}

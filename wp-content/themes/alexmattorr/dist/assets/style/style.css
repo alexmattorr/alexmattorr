@@ -735,6 +735,10 @@ aside ul li.is-active svg {
   }
 }
 
+.contact {
+  position: relative;
+}
+
 .contact .contact-info {
   float: left;
   clear: none;
@@ -744,8 +748,18 @@ aside ul li.is-active svg {
   margin-bottom: 1.5625rem;
 }
 
+.contact .contact-info ul {
+  margin: 0.9375rem 0;
+}
+
 .contact .contact-info li {
-  padding-top: 0.625rem;
+  padding: 0.3125rem 0;
+}
+
+.contact .contact-info li span {
+  padding-right: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .contact .contact-info li a {
@@ -780,6 +794,10 @@ aside ul li.is-active svg {
   padding: 0.625rem;
   background: #F9F9F9;
   border: 0.0625rem solid transparent;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
 }
 
 .contact .contact-form form input:focus,
@@ -798,6 +816,21 @@ aside ul li.is-active svg {
 
 .contact .contact-form form .wpcf7-submit:hover {
   background: #1bc09f;
+}
+
+.contact .contact-form form .wpcf7-not-valid {
+  border-bottom: 0.0625rem solid #d04132;
+}
+
+.contact .contact-form form .wpcf7-not-valid-tip {
+  display: none !important;
+}
+
+.contact .contact-form form .wpcf7-response-output {
+  margin-top: 0px;
+  border: none;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -882,6 +915,14 @@ aside ul li.is-active svg {
   .about-item {
     width: 100%;
   }
+
+  .about-item h5 {
+    text-align: center;
+  }
+}
+
+.skill-header {
+  text-align: center;
 }
 
 .about-skills {
@@ -938,13 +979,9 @@ aside ul li.is-active svg {
 }
 
 .about-skills .about-skill li {
-  padding: 0 0.3125rem 0.3125rem 0.3125rem;
+  padding: 0.3125rem;
   font-size: 0.8rem;
   font-weight: 600;
-}
-
-.about-skills .about-skill li:first-child {
-  padding-top: 0.625rem;
 }
 
 @font-face {

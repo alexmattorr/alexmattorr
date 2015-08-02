@@ -5,6 +5,7 @@
 	    if(have_rows('about_paragraph') ):
 	    while(have_rows('about_paragraph') ) : the_row();
 		?>
+			<h5><?php echo the_sub_field('paragraph_header'); ?></h5>
 			<p><?php echo the_sub_field('paragraph'); ?></p>
 		<?php
 		  endwhile;
@@ -13,6 +14,7 @@
 	</article>
 
 	<article class="about-item">
+		<h5 class="skill-header"><?php echo the_field('skill_header'); ?></h5>
 		<ul class="about-skills">
 			<?php
 		    if(have_rows('about_skills') ):

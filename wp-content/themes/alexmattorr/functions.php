@@ -67,3 +67,15 @@ function blankslate_comments_number( $count ) {
 		return $count;
 	}
 }
+
+register_post_type( 'work',
+  array(
+    'supports' => array('title','post-formats'),
+    'labels' => array(
+      'name' => __( 'Work' ),
+      'singular_name' => __( 'Work' )
+    ),
+    'public' => true,
+    'has_archive' => 'work',
+  )
+);
