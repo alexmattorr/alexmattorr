@@ -20,7 +20,7 @@ get_header();?>
 			<div class="work-info">
 				<h5><?php echo the_title(); ?></h5>
 				<h6><?php echo the_field('work_company') ?></h6>
-				<a href="<?php echo the_field('work_external_link') ?>" class="work-link">View Project</a>
+				<a href="<?php echo the_field('work_external_link') ?>" target="_blank" class="work-link">View Project</a>
 				<div class="work-info-item">
 					<p><?php echo the_field('work_info') ?></p>
 				</div>

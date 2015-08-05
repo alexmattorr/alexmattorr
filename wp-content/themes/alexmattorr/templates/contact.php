@@ -1,16 +1,16 @@
 <section class="contact wrapper" id="contact">
-		<h3 class="title">contact</h3>
+		<h3 class="title"><?php echo the_field('contact_title'); ?></h3>
 
 	<article class="contact-info">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto qui non labore, ex nemo, est optio explicabo perspiciatis dolorem eaque dolores. Nesciunt voluptatem, odio modi maiores repellat illo, dolorem suscipit.</p>
+		<p><?php echo the_field('contact_info'); ?></p>
 
 		<ul>
-			<li><a href="mailto:alexmattorr@gmail.com">alexmattorr@gmail.com</a></li>
-			<li><a href="tel:4153149497">(415) 314 9497</a></li>
+			<li><a href="mailto:<?php echo the_field('contact_email'); ?>"><?php echo the_field('contact_email'); ?></a></li>
+			<li><a href="tel:<?php echo the_field('contact_telephone'); ?>"><?php echo the_field('contact_telephone'); ?></a></li>
 		</ul>
 
 		<div class="contact-item contact-location">
-			Salt Lake City, <span>UT</span>
+			<?php echo the_field('city'); ?>, <span><?php echo the_field('state'); ?></span>
 		</div>
 	</article>
 
@@ -20,15 +20,15 @@
 
 	<ul class="contact-social">
 			<li>
-				<a href="https://github.com/alexsmander" target="_blank">
+				<a href="<?php echo the_field('github_link'); ?>" target="_blank">
 					<i class="fa fa-github-alt fa-lg"></i>
 				</a>
 			</li><li>
-				<a href="https://www.linkedin.com/in/alexmattorr" target="_blank">
+				<a href="<?php echo the_field('linkedin_link'); ?>" target="_blank">
 					<i class="fa fa-linkedin fa-lg"></i>
 				</a>
 			</li><li>
-				<a href="https://twitter.com/alexmattorr" target="_blank">
+				<a href="<?php echo the_field('twitter_link'); ?>" target="_blank">
 					<i class="fa fa-twitter fa-lg"></i>
 				</a>
 			</li>
