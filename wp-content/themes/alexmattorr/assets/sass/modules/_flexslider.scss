@@ -111,8 +111,8 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 75px;
   margin: -20px 0 0;
   position: absolute;
   top: 50%;
@@ -129,16 +129,20 @@ html[xmlns] .flexslider .slides {
   transition: all 0.3s ease-in-out;
 }
 .flex-direction-nav a:before {
-  font-family: "flexslider-icon";
-  font-size: 40px;
-  display: inline-block;
-  content: '\f001';
-  color: rgba($white, 0.8);
-  // color: rgba(0, 0, 0, 0.8);
-  // text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  content: " ";
+  display: block;
+  background: url('../../img/left-arrow.png') no-repeat;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
 }
 .flex-direction-nav a.flex-next:before {
-  content: '\f002';
+  content: " ";
+  display: block;
+  background: url('../../img/right-arrow.png') no-repeat;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
 }
 .flex-direction-nav .flex-prev {
   left: -50px;
