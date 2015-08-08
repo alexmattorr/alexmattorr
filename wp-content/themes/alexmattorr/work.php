@@ -1,6 +1,7 @@
 <?php
 /* Template Name: Work Page Template */
 get_header();?>
+	<div class="workpage-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/dist/assets/img/blur-1.png)"></div>
 	<a id="go-home" href="<?php echo get_home_url() ?>">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><polygon fill="none" stroke-width="2" stroke-miterlimit="10" points="32,3 2,33 11,33 11,63 23,63 23,47 39,47 39,63 51,63 51,33 62,33 "/></svg>
 	</a>

@@ -50,6 +50,7 @@
 			padding: rem(5px);
 			font-size: 0.8rem;
 			font-weight: $font-bold;
+			&:first-child { padding-top: rem(14px); }
 		}
 	}
 }
