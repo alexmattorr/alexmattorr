@@ -15,6 +15,7 @@ app.base = (function($, _ , app) {
 		this.navScroller();
 		this.sideBar();
 		this.about();
+		this.work();
 	};
 
 	def.prototype = {
@@ -36,6 +37,10 @@ app.base = (function($, _ , app) {
 
 		about: function() {
 			aboutToggle();
+		},
+
+		work: function() {
+			work_slider();
 		}
 	};
 
