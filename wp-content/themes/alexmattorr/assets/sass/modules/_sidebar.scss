@@ -3,7 +3,7 @@ aside {
 	position: fixed;
 	min-width: rem(50px);
 	height: 100vh;
-	background: rgba($d-coal, .8);
+	background: $d-coal;
 
 	#side-toggle { 
 		margin: rem(25px) 0;

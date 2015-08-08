@@ -591,7 +591,7 @@ aside {
   position: fixed;
   min-width: 3.125rem;
   height: 100vh;
-  background: rgba(21, 21, 21, 0.8);
+  background: #151515;
 }
 
 aside #side-toggle {
@@ -1026,7 +1026,7 @@ aside ul li.is-active svg {
 }
 
 #work-slider {
-  margin-top: 6.25rem;
+  margin-top: 4.6875rem;
 }
 
 .work-page-item {
