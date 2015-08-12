@@ -54,7 +54,7 @@ nav { ul { @include reset-list(); } }
   margin-left: rem(85px);
   margin-right: rem(25px);
   @include mobile() {
-    margin: 0 20px;
+    margin: 0;
   }
 }
 
@@ -76,7 +76,7 @@ nav { ul { @include reset-list(); } }
   }
   h5 { font-weight: $font-bold; }
 
-	@include tablet() { padding: rem(50px) 4%; }
+	@include tablet() { padding: rem(50px) 5%; }
   @include mobile() { &:last-child { margin-bottom: rem(100px); } }
 }
 

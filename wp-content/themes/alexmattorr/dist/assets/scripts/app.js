@@ -97,7 +97,7 @@ function navScroll() {
     if (windscroll >= 100) {
 			$('aside li').removeClass();
       $('.wrapper').each(function(i) {
-        if ($(this).position().top <= windscroll + 50) {
+        if ($(this).position().top <= windscroll + 350) {
           $('aside li.is-active').removeClass('is-active');
           $('aside li').eq(i).addClass('is-active');
         }

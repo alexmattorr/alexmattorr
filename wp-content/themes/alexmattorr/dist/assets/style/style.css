@@ -227,7 +227,7 @@ nav ul li {
 
 @media only screen and (max-width: 767px) {
   .container {
-    margin: 0 20px;
+    margin: 0;
   }
 }
 
@@ -281,7 +281,7 @@ nav ul li {
 
 @media only screen and (max-width: 960px) {
   .wrapper {
-    padding: 3.125rem 4%;
+    padding: 3.125rem 5%;
   }
 }
 
@@ -805,7 +805,7 @@ aside ul li.is-active svg {
 .contact .contact-form form textarea {
   width: 100%;
   margin-bottom: 0.625rem;
-  padding: 0.625rem;
+  padding: 1.25rem;
   background: #F9F9F9;
   border: 0.0625rem solid transparent;
   -webkit-transition-property: border;
@@ -1055,12 +1055,6 @@ aside ul li.is-active svg {
   display: block;
 }
 
-@media only screen and (max-width: 767px) {
-  .work-page-item {
-    width: 90%;
-  }
-}
-
 .work-page-item .work-hero {
   max-width: 75.625rem;
   width: 80%;
@@ -1070,6 +1064,12 @@ aside ul li.is-active svg {
   background-size: cover;
   background-position: top center;
   border-bottom: 0.0625rem solid #444;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-page-item .work-hero {
+    width: 100%;
+  }
 }
 
 .work-page-item .work-info {
@@ -1090,6 +1090,12 @@ aside ul li.is-active svg {
 
 .work-page-item .work-info:after {
   clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-page-item .work-info {
+    width: 100%;
+  }
 }
 
 .work-page-item .work-info h5 {

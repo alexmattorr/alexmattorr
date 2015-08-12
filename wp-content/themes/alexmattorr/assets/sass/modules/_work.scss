@@ -24,7 +24,6 @@
 	box-shadow: 0 2px 4px 0 rgba($coal,0.16),0 2px 10px 0 rgba($coal,0.12) !important;
 	@include mobile() { margin-bottom: rem(25px); }
 	&.is-active { display: block; }
-	@include mobile() { width: 90%; }
 	.work-hero {
 		max-width: rem(1210px);
 		width: 80%;
@@ -34,6 +33,7 @@
 		background-size: cover;
 		background-position: top center;
 		border-bottom: rem(1px) solid $coal;
+		@include mobile() { width: 100%; }
 	}
 	.work-info {
 		@include cf();
@@ -45,6 +45,7 @@
 		padding: rem(40px);
 
 		background: $white;
+		@include mobile() { width: 100%; }
 		h5 { font-weight: $font-bold; }
 		h6 {
 			margin-top: 0;
