@@ -189,13 +189,22 @@ function work_slider() {
         slide     =     $('.work-page-item'),
         active    =     'flex-active-slide';
 
+    slide.hide().removeClass(active);
+    slide.each(function() {
+      var data = $(this).data('work');
+      if (hashUrl == data) {
+        var thisIndex = $(this).index();
+        $('#work-slider').flexslider(thisIndex - 1);
+      }
+    });
+
     // key left and right
     body.keydown(function(e) {
       if(e.keyCode == 37 || e.keyCode == 39) {
         setTimeout(function() {
           slide.each(function() {
             if ( $(this).hasClass(active) ) {
-              clean = $(this).data('work').slice(1);
+              clean = $(this).data('work');
               window.location.hash = clean;
             }
           });
@@ -207,7 +216,7 @@ function work_slider() {
     arrow.click(function() {
       slide.each(function() {
         if ( $(this).hasClass(active) ) {
-          clean = $(this).data('work').slice(1);
+          clean = $(this).data('work');
           window.location.hash = clean;
         }
       });
@@ -218,7 +227,7 @@ function work_slider() {
       setTimeout(function() {
         slide.each(function() {
           if ( $(this).hasClass(active) ) {
-            clean = $(this).data('work').slice(1);
+            clean = $(this).data('work');
             window.location.hash = clean;
           }
         });

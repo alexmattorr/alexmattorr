@@ -4,6 +4,7 @@
 	@include mobile() { 
 		width: 100%;
 		h5 { text-align: center; }
+		p { margin-bottom: rem(50px); }
 	}
 }
 
