@@ -61,8 +61,8 @@ aside {
 			display: inline-block;
 			@include span(1/4);
 			text-align: center;
-			border-top: rem(2px) solid $d-coal;
-			&.is-active { border-top: rem(2px) solid $main-color; }
+			border-top: rem(5px) solid $d-coal;
+			&.is-active { border-top: rem(5px) solid $main-color; }
 			a { display: block !important; }
 		}
 	}

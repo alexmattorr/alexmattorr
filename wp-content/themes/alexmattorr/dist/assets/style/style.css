@@ -675,11 +675,11 @@ aside ul li.is-active svg {
     margin-left: 0;
     margin-right: 0;
     text-align: center;
-    border-top: 0.125rem solid #151515;
+    border-top: 0.3125rem solid #151515;
   }
 
   aside li.is-active {
-    border-top: 0.125rem solid #EE2E22;
+    border-top: 0.3125rem solid #EE2E22;
   }
 
   aside li a {
@@ -690,7 +690,7 @@ aside ul li.is-active svg {
 .top {
   position: relative;
   width: 100%;
-  height: 60vh !important;
+  height: 70vh !important;
   padding-top: 4.6875rem !important;
   background: transparent !important;
   text-align: center;
