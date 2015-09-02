@@ -560,5 +560,71 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-	
+	register_field_group(array (
+		'id' => 'acf_work-button-2',
+		'title' => 'Work Button',
+		'fields' => array (
+			array (
+				'key' => 'field_55e780fd22bc9',
+				'label' => 'Work Button',
+				'name' => 'work_button',
+				'type' => 'repeater',
+				'instructions' => 'Add work button',
+				'sub_fields' => array (
+					array (
+						'key' => 'field_55e7810f22bca',
+						'label' => 'Title',
+						'name' => 'title',
+						'type' => 'text',
+						'instructions' => 'Add the button label',
+						'required' => 1,
+						'column_width' => '',
+						'default_value' => '',
+						'placeholder' => 'View Project',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'none',
+						'maxlength' => '',
+					),
+					array (
+						'key' => 'field_55e7812122bcb',
+						'label' => 'Link',
+						'name' => 'link',
+						'type' => 'text',
+						'instructions' => 'Add the work item link',
+						'required' => 1,
+						'column_width' => '',
+						'default_value' => '',
+						'placeholder' => 'http://www.iiwisdom.com',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'none',
+						'maxlength' => '',
+					),
+				),
+				'row_min' => '',
+				'row_limit' => 2,
+				'layout' => 'row',
+				'button_label' => 'Add Row',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'work',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }
