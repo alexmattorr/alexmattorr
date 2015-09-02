@@ -1129,10 +1129,13 @@ aside ul li.is-active svg {
   font-style: italic;
 }
 
-.work-page-item-wrapper .work-info a {
+.work-page-item-wrapper .work-info .work-buttons {
   position: absolute;
   top: 2.5rem;
   right: 2.5rem;
+}
+
+.work-page-item-wrapper .work-info .work-buttons a {
   padding: 0.625rem 0.9375rem;
   background: #EE2E22;
   color: #FFF;
@@ -1142,7 +1145,7 @@ aside ul li.is-active svg {
   transition-duration: .3s;
 }
 
-.work-page-item-wrapper .work-info a:hover {
+.work-page-item-wrapper .work-info .work-buttons a:hover {
   background: #BD190F;
 }
 
@@ -1151,7 +1154,7 @@ aside ul li.is-active svg {
     margin-bottom: 2.1875rem;
   }
 
-  .work-page-item-wrapper .work-info a {
+  .work-page-item-wrapper .work-info .work-buttons {
     position: static;
   }
 }

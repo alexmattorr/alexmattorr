@@ -24,7 +24,11 @@ get_header();?>
 					<div class="work-info">
 						<h5><?php echo the_title(); ?></h5>
 						<h6><?php echo the_field('work_company') ?></h6>
-						<a href="<?php echo the_field('work_external_link') ?>" target="_blank" class="work-link">View Project</a>
+						<div class="work-buttons">
+						<?php if( have_rows('work_button') ): while ( have_rows('work_button') ) : the_row(); ?>
+							<a href="<?php echo the_sub_field('link'); ?>" target="_blank" class="work-link"><?php echo the_sub_field('title'); ?></a>
+						<?php endwhile; else : endif; ?>
+						</div>
 						<div class="work-info-item">
 							<p><?php echo the_field('work_info') ?></p>
 						</div>

@@ -53,20 +53,22 @@
 			font-weight: $font-light; 
 			font-style: italic;
 		}
-		a {
+		.work-buttons {
 			position: absolute;
 			top: rem(40px);
 			right: rem(40px);
-			padding: rem(10px) rem(15px);
-			background: $main-color;
-			color: $white;
-			transition-property: background;
-			transition-duration: .3s;
-			&:hover { background: $second-color; }
+			a {
+				padding: rem(10px) rem(15px);
+				background: $main-color;
+				color: $white;
+				transition-property: background;
+				transition-duration: .3s;
+				&:hover { background: $second-color; }
+			}
 		}
 		@include mobile() {
 			h6 { margin-bottom: rem(35px); }
-			a { position: static; }
+			.work-buttons { position: static; }
 		}
 		.work-info-item {
 			@include col(1/2);

@@ -183,19 +183,6 @@ if(function_exists("register_field_group"))
 				'formatting' => 'none',
 			),
 			array (
-				'key' => 'field_55be4709178f5',
-				'label' => 'Work External Link',
-				'name' => 'work_external_link',
-				'type' => 'text',
-				'instructions' => 'Add the link to the live version.',
-				'default_value' => '',
-				'placeholder' => 'http://www.juniper.net/us/en/',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'none',
-				'maxlength' => '',
-			),
-			array (
 				'key' => 'field_55be474cf3e71',
 				'label' => 'Work Internal Link',
 				'name' => 'work_internal_link',
@@ -573,4 +560,5 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+	
 }
