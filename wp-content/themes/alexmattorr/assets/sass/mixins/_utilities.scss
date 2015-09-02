@@ -20,7 +20,7 @@
   }
 }
 
-@mixin dev-mode() {> * {  border: 1px solid green;} > * > * {border: 1px solid tomato } > * > * > * { border: 1px solid DeepSkyBlue; } > * > * > * > * { border: 1px solid DeepPink; } > * > * > * > * > * { border: 1px solid MediumSlateBlue;}}
+@mixin dev-mode() {> * {  border: 1px solid main-color;} > * > * {border: 1px solid tomato } > * > * > * { border: 1px solid DeepSkyBlue; } > * > * > * > * { border: 1px solid DeepPink; } > * > * > * > * > * { border: 1px solid MediumSlateBlue;}}
 
 @mixin sibling-count() {
   li:first-child:nth-last-child(1) {

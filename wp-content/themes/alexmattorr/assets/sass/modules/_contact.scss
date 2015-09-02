@@ -7,11 +7,11 @@
 		li {
 			padding: rem(10px) 0;
 			a {
-				color: $green;
+				color: $main-color;
 
 				transition-property: color;
 				transition-duration: .3s;
-				&:hover { color: $d-green; }
+				&:hover { color: $second-color; }
 			}
 		}
 	}
@@ -24,16 +24,18 @@
 			input, textarea {
 				width: 100%;
 				margin-bottom: rem(10px);
-				padding: rem(20px);
+				padding: rem(15px);
 				
 				background: $l-gray;
-				border: rem(1px) solid transparent;
+				border: rem(5px) solid transparent;
+				font-size: rem(14px);
+				letter-spacing: rem(1px);
 
 				transition-property: border;
 				transition-duration: .3s;
 				&:focus {
 					outline: 0;
-					border-bottom: rem(1px) solid $green;
+					border: rem(5px) solid $main-color;
 				}
 			}
 			.wpcf7-submit {
@@ -41,10 +43,10 @@
 				transition-duration: .3s;
 				cursor: pointer;
 				&:hover {
-					background: $green;
+					background: $main-color;
 				}
 			}
-			.wpcf7-not-valid { border-bottom: rem(1px) solid $red; }
+			.wpcf7-not-valid { border: rem(5px) solid $red; }
 			.wpcf7-not-valid-tip { display: none !important; }
 			.wpcf7-response-output {
 				margin-top: 0px;
@@ -81,12 +83,12 @@
 			padding: rem(13px) 0;
 			a {
 				padding: rem(10px) rem(14px);
-				background: $green;
+				background: $main-color;
 				transition-property: background;
 				transition-duration: .3s;
 				.fa { color: $white; }
 			}
-			&:hover { a { background: $d-green; } }
+			&:hover { a { background: $second-color; } }
 		}
 	}
 }

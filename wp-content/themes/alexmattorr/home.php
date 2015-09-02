@@ -1,7 +1,7 @@
 <?php
 /* Template Name: Home Page Template */
 get_header();?>
-	<div class="home-image" style="background-image: url(<?php echo the_field('hero_image') ?>"></div>
+	<div class="home-image"></div>
 	<?php include 'sidebar.php'; ?>
 	<div class="container">
 		<?php include 'templates/top.php';?>

@@ -4,7 +4,7 @@
 	<?php
     $args = array(
       'post_type' => 'work',
-      'posts_per_page' => 50
+      'posts_per_page' => 12
     );
     $the_query = new WP_Query($args);
     if (have_posts()):

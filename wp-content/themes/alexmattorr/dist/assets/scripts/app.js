@@ -186,15 +186,19 @@ function work_slider() {
         body      =     $('body'),
         arrow     =     $('.flex-direction-nav'),
         dot       =     $('.flex-control-nav li'),
-        slide     =     $('.work-page-item'),
+        slide     =     $('.work-page-item-wrapper'),
         active    =     'flex-active-slide';
 
     slide.hide().removeClass(active);
     slide.each(function() {
-      var data = $(this).data('work');
+      var data = $(this).data('work'),
+          name = $(this).find('h5').text();
+
       if (hashUrl == data) {
         var thisIndex = $(this).index();
-        $('#work-slider').flexslider(thisIndex - 1);
+        $('#work-slider').flexslider(thisIndex -1);
+
+        console.log( "THIS IS SELECTED: " + name + ": " + thisIndex );
       }
     });
 

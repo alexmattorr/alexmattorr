@@ -162,8 +162,9 @@ body {
   position: fixed;
   width: 100%;
   height: 75vh;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EE2E22), to(#BD190F));
+  background-image: -webkit-linear-gradient(#EE2E22, #BD190F);
+  background-image: linear-gradient(#EE2E22, #BD190F);
 }
 
 .workpage-image {
@@ -172,9 +173,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
+  height: 49.7vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EE2E22), to(#BD190F));
+  background-image: -webkit-linear-gradient(#EE2E22, #BD190F);
+  background-image: linear-gradient(#EE2E22, #BD190F);
 }
 
 #wpadminbar {
@@ -270,9 +272,9 @@ nav ul li {
 
 .wrapper .title {
   padding-bottom: 1.5625rem;
-  color: #1bc09f;
+  color: #EE2E22;
   text-align: center;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .wrapper h5 {
@@ -473,11 +475,11 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   h1 {
-    font-size: 1.625rem;
+    font-size: 1.75rem;
   }
 
   h2 {
-    font-size: 1.5625rem;
+    font-size: 1.625rem;
   }
 
   h3 {
@@ -485,7 +487,7 @@ h6 {
   }
 
   h4 {
-    font-size: 1.4375rem;
+    font-size: 1.375rem;
   }
 
   h5 {
@@ -641,12 +643,12 @@ aside ul li span {
 
 aside ul li:hover a,
 aside ul li.is-active a {
-  color: #1bc09f;
+  color: #EE2E22;
 }
 
 aside ul li:hover svg,
 aside ul li.is-active svg {
-  stroke: #1bc09f;
+  stroke: #EE2E22;
 }
 
 @media only screen and (max-width: 767px) {
@@ -677,7 +679,7 @@ aside ul li.is-active svg {
   }
 
   aside li.is-active {
-    border-top: 0.125rem solid #1bc09f;
+    border-top: 0.125rem solid #EE2E22;
   }
 
   aside li a {
@@ -698,7 +700,9 @@ aside ul li.is-active svg {
   width: 12.5rem;
   margin-bottom: 3.125rem;
   border-radius: 50%;
-  border: 0.3125rem solid #1bc09f;
+  border: 0.3125rem solid #FFF;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.16), 0 2px 10px 0 rgba(68, 68, 68, 0.12) !important;
+  box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.16), 0 2px 10px 0 rgba(68, 68, 68, 0.12) !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -774,7 +778,7 @@ aside ul li.is-active svg {
 }
 
 .contact .contact-info li a {
-  color: #1bc09f;
+  color: #EE2E22;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: .3s;
@@ -782,7 +786,7 @@ aside ul li.is-active svg {
 }
 
 .contact .contact-info li a:hover {
-  color: #16A085;
+  color: #BD190F;
 }
 
 .contact .contact-form {
@@ -802,9 +806,11 @@ aside ul li.is-active svg {
 .contact .contact-form form textarea {
   width: 100%;
   margin-bottom: 0.625rem;
-  padding: 1.25rem;
+  padding: 0.9375rem;
   background: #F9F9F9;
-  border: 0.0625rem solid transparent;
+  border: 0.3125rem solid transparent;
+  font-size: 0.875rem;
+  letter-spacing: 0.0625rem;
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: .3s;
@@ -814,7 +820,7 @@ aside ul li.is-active svg {
 .contact .contact-form form input:focus,
 .contact .contact-form form textarea:focus {
   outline: 0;
-  border-bottom: 0.0625rem solid #1bc09f;
+  border: 0.3125rem solid #EE2E22;
 }
 
 .contact .contact-form form .wpcf7-submit {
@@ -826,11 +832,11 @@ aside ul li.is-active svg {
 }
 
 .contact .contact-form form .wpcf7-submit:hover {
-  background: #1bc09f;
+  background: #EE2E22;
 }
 
 .contact .contact-form form .wpcf7-not-valid {
-  border-bottom: 0.0625rem solid #d04132;
+  border: 0.3125rem solid #d04132;
 }
 
 .contact .contact-form form .wpcf7-not-valid-tip {
@@ -891,7 +897,7 @@ aside ul li.is-active svg {
 
 .contact .contact-social li a {
   padding: 0.625rem 0.875rem;
-  background: #1bc09f;
+  background: #EE2E22;
   -webkit-transition-property: background;
   transition-property: background;
   -webkit-transition-duration: .3s;
@@ -903,7 +909,7 @@ aside ul li.is-active svg {
 }
 
 .contact .contact-social li:hover a {
-  background: #16A085;
+  background: #BD190F;
 }
 
 .about-item {
@@ -1027,39 +1033,60 @@ aside ul li.is-active svg {
 }
 
 #work-slider {
-  margin-top: 4.6875rem;
+  margin-top: 10.9375rem;
 }
 
-.work-page-item {
+.work-page-item-wrapper {
   *zoom: 1;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.16), 0 2px 10px 0 rgba(68, 68, 68, 0.12) !important;
-  box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.16), 0 2px 10px 0 rgba(68, 68, 68, 0.12) !important;
 }
 
-.work-page-item:before,
-.work-page-item:after {
+.work-page-item-wrapper:before,
+.work-page-item-wrapper:after {
   content: '';
   display: table;
 }
 
-.work-page-item:after {
+.work-page-item-wrapper:after {
   clear: both;
 }
 
 @media only screen and (max-width: 767px) {
-  .work-page-item {
+  .work-page-item-wrapper {
     margin-bottom: 1.5625rem;
   }
 }
 
-.work-page-item.is-active {
+.work-page-item-wrapper.is-active {
   display: block;
 }
 
-.work-page-item .work-hero {
+.work-page-item-wrapper .work-page-item {
+  *zoom: 1;
   max-width: 75.625rem;
   width: 80%;
   margin: 0 auto;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.16), 0 2px 10px 0 rgba(68, 68, 68, 0.12) !important;
+  box-shadow: 0 2px 4px 0 rgba(68, 68, 68, 0.16), 0 2px 10px 0 rgba(68, 68, 68, 0.12) !important;
+}
+
+.work-page-item-wrapper .work-page-item:before,
+.work-page-item-wrapper .work-page-item:after {
+  content: '';
+  display: table;
+}
+
+.work-page-item-wrapper .work-page-item:after {
+  clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-page-item-wrapper .work-page-item {
+    width: 100%;
+  }
+}
+
+.work-page-item-wrapper .work-hero {
+  width: 100%;
   min-height: 18.75rem;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1067,55 +1094,47 @@ aside ul li.is-active svg {
   border-bottom: 0.0625rem solid #444;
 }
 
-@media only screen and (max-width: 767px) {
-  .work-page-item .work-hero {
-    width: 100%;
-  }
-}
-
-.work-page-item .work-info {
+.work-page-item-wrapper .work-info {
   *zoom: 1;
-  max-width: 75.625rem;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   position: relative;
   padding: 2.5rem;
   background: #FFF;
 }
 
-.work-page-item .work-info:before,
-.work-page-item .work-info:after {
+.work-page-item-wrapper .work-info:before,
+.work-page-item-wrapper .work-info:after {
   content: '';
   display: table;
 }
 
-.work-page-item .work-info:after {
+.work-page-item-wrapper .work-info:after {
   clear: both;
 }
 
 @media only screen and (max-width: 767px) {
-  .work-page-item .work-info {
+  .work-page-item-wrapper .work-info {
     width: 100%;
   }
 }
 
-.work-page-item .work-info h5 {
+.work-page-item-wrapper .work-info h5 {
   font-weight: 600;
 }
 
-.work-page-item .work-info h6 {
+.work-page-item-wrapper .work-info h6 {
   margin-top: 0;
   font-size: 1rem;
   font-weight: 300;
   font-style: italic;
 }
 
-.work-page-item .work-info a {
+.work-page-item-wrapper .work-info a {
   position: absolute;
   top: 2.5rem;
   right: 2.5rem;
   padding: 0.625rem 0.9375rem;
-  background: #1bc09f;
+  background: #EE2E22;
   color: #FFF;
   -webkit-transition-property: background;
   transition-property: background;
@@ -1123,21 +1142,21 @@ aside ul li.is-active svg {
   transition-duration: .3s;
 }
 
-.work-page-item .work-info a:hover {
-  background: #16A085;
+.work-page-item-wrapper .work-info a:hover {
+  background: #BD190F;
 }
 
 @media only screen and (max-width: 767px) {
-  .work-page-item .work-info h6 {
+  .work-page-item-wrapper .work-info h6 {
     margin-bottom: 2.1875rem;
   }
 
-  .work-page-item .work-info a {
+  .work-page-item-wrapper .work-info a {
     position: static;
   }
 }
 
-.work-page-item .work-info .work-info-item {
+.work-page-item-wrapper .work-info .work-info-item {
   float: left;
   clear: none;
   width: 48.5%;
@@ -1145,14 +1164,21 @@ aside ul li.is-active svg {
   margin-right: 3%;
 }
 
-.work-page-item .work-info .work-info-item:last-child {
+.work-page-item-wrapper .work-info .work-info-item:last-child {
   margin-right: 0;
 }
 
 @media only screen and (max-width: 767px) {
-  .work-page-item .work-info .work-info-item {
+  .work-page-item-wrapper .work-info .work-info-item {
     width: 100%;
     margin-top: 2.1875rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .flex-control-paging,
+  .flex-direction-nav {
+    display: none;
   }
 }
 
@@ -1386,7 +1412,6 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -40px;
   text-align: center;
 }
 
@@ -1416,7 +1441,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-control-paging li a.flex-active {
-  background: #1bc09f;
+  background: #EE2E22;
   cursor: default;
 }
 

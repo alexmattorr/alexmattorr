@@ -43,8 +43,8 @@ aside {
 				text-transform: uppercase;
 			}
 			&:hover, &.is-active {
-			 a { color: $green; }
-			 svg { stroke: $green; }
+			 a { color: $main-color; }
+			 svg { stroke: $main-color; }
 			}
 		}
 	}
@@ -62,7 +62,7 @@ aside {
 			@include span(1/4);
 			text-align: center;
 			border-top: rem(2px) solid $d-coal;
-			&.is-active { border-top: rem(2px) solid $green; }
+			&.is-active { border-top: rem(2px) solid $main-color; }
 			a { display: block !important; }
 		}
 	}
