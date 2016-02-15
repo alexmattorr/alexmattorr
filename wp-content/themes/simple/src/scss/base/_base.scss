@@ -1,0 +1,42 @@
+// Responsive container
+.container {
+  @include center($desktop, 20px);
+  @include media("<tablet") {
+    padding: 0 4%;
+  }
+}
+
+// Utility classes
+.cf {
+  @include cf();
+}
+
+.vh {
+	@include vertically-align();
+}
+
+// Additional resets / base styling - see knapsack:
+@include reset-elements();
+
+input   { outline: none; }
+table   {
+  // Turn this on for default table styling
+  // @include table();
+}
+code    { @include code(); }
+pre     { @include pre() }
+hr      { @include rule(); }
+nav ul  { @include reset-list(); }
+ul.text { @include text-list();}
+ol.text { @include text-list('decimal');}
+
+ul.text ul, ul.text ol, ol.text ol, ol.text ul { margin: .3rem 1rem 0;}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#wpadminbar {
+  display: none;
+}

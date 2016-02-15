@@ -1,0 +1,20 @@
+// Colors
+$white: #FFFFFF;
+$coal: #444;
+$black: #222;
+$green: #27ae60;
+
+// Paragraph link color:
+p a {
+  color: deepskyblue;
+  transition: all .3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken(deepskyblue, 10%);
+  }
+}
+
+// Brand Colors
+
+// Colors by Use
