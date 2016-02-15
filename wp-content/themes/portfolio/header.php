@@ -8,6 +8,7 @@
     <meta name="viewport"    content="width=device-width, initial-scale=1, minimum-scale=1"/>
     <!-- <script type="text/javascript" src="../assets/svg/grunticon.loader.js"></script> -->
     <link href="<?php echo get_template_directory_uri(); ?>/dist/assets/style/min/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_home_url(); ?>/alex_favicon.png">
 		<?php wp_head(); ?>
 	</head>
 <body>
