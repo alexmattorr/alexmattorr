@@ -2,20 +2,32 @@
 (function($) {
   function overlay() {
     var $overlay = $('.overlay'),
-        $main = $('.main');
+      $main = $('.main');
 
     $main.fadeToggle();
     $overlay.fadeToggle();
   }
 
-  function mainBtn() {
-    var $btn = $('#main-btn');
+  function overlayClicks() {
+    var $btn = $('#main-btn'),
+      $close = $('.overlay-close');
 
     $btn.click(function() {
       overlay();
     });
+
+    $close.click(function() {
+      overlay();
+    });
+
+    $(document).keyup(function(e) {
+      if (e.keyCode === 27) {
+        overlay();
+      }
+    });
   }
+
   $(function() {
-    mainBtn();
+    overlayClicks();
   });
 }(jQuery));
