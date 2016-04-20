@@ -1,0 +1,8 @@
+a.btn,
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  @include button(dodgerblue);
+  font-family: $head-font;
+}

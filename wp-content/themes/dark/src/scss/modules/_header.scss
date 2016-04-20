@@ -1,0 +1,29 @@
+header {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, $coal, $black);;
+
+  box-sizing: border-box;
+}
+
+.logo {
+  display: inline-block;
+  color: $white;
+}
+
+.nav {
+  display: inline-block;
+  float: right;
+  li {
+    display: inline-block;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

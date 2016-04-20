@@ -1,0 +1,51 @@
+.work {
+  width: 100%;
+  height: 100vh;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  width: percentage(1/3);
+  height: percentage(1/3);
+  float: left;
+
+  cursor: pointer;
+
+  &.is-large {
+    z-index: 99;
+    overflow: visible;
+    .img {
+      transform: scale(2);
+    }
+  }
+}
+
+.img {
+  @include aspect-ratio(4, 3);
+  height: 100%;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: transform ease-in-out .2s;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .85;
+    transition: opacity ease-in-out .2s;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    &:before {
+      opacity: .6;
+    }
+  }
+}

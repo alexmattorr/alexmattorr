@@ -1,0 +1,32 @@
+{
+  "name": "kni-wp",
+  "homepage": "kni-wp",
+  "authors": [
+    {
+      "name": "KNI",
+      "email": "projects@kurtnoble.com",
+      "homepage": "kurtnoble.com"
+    }
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".sass-cache",
+    "build"
+  ],
+  "devDependencies": {
+    "meyer-reset": "*",
+    "html5-history-api": "^4.2.1",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "include-media": "~1.4.1",
+    "jeet": "~6.1.2",
+    "old-browsers": "~0.0.2",
+    "knapsack": "~0.1.x",
+    "normalize-libsass": "~1.0.3",
+    "waves": "~0.7.5"
+  }
+}

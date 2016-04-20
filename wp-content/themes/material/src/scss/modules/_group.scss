@@ -1,0 +1,52 @@
+.group {
+  overflow-x: hidden;
+  width: 100%;
+  height: 25vh;
+
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+
+  background-color: $white;
+  border-left: 1px solid $grey-d;
+  border-bottom: 1px solid $grey-d;
+
+  &:nth-child(1) {
+    @include itemColors($indago);
+    border-top: 1px solid $grey-d;
+    &.is-large {
+      border-top: none;
+    }
+  }
+  &:nth-child(2) { @include itemColors($light-blue); }
+  &:nth-child(3) { @include itemColors($teal); }
+  &:nth-child(4) {
+    @include itemColors($light-green);
+    border-bottom: 0px;
+  }
+
+  &.is-small {
+    height: 5vh;
+    .group-title {
+      font-size: rem(18px);
+    }
+  }
+
+  &.is-large {
+    overflow-x: scroll;
+    height: 85vh;
+    cursor: default;
+    box-shadow: inset 0 1px 25px -5px $coal;
+    .group-title {
+      display: none;
+    }
+    .content {
+      display: block;
+    }
+  }
+}
+
+.group-title {
+  @include vertically-align();
+  margin-bottom: 0px;
+  text-align: center;
+}

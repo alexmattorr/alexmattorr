@@ -1,0 +1,22 @@
+form {
+	margin: rem(25px) 0;
+	width: 100%;
+
+	input:not([type="submit"]), textarea, select {
+		padding: rem(10px);
+		margin-bottom: rem(10px);
+		width: 100%;
+		border: rem(1px) solid Gainsboro;
+		outline: none;
+
+		transition: border ease-in-out .3s;
+
+		&:focus {
+			border-color: deepSkyBlue !important;
+		}
+
+		&.invalid {
+			border-color: red;
+		}
+	}
+}

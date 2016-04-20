@@ -1,0 +1,15 @@
+a.btn,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  @include button($white);
+  background-color: transparent;
+  border: rem(1px) solid $white;
+  border-radius: rem(0px);
+
+  outline: none !important;
+  &:hover {
+    background-color: rgba($white, 0.4);
+  }
+}

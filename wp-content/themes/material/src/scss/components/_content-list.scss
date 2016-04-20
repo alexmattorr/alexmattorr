@@ -1,0 +1,53 @@
+$content-list-height: rem(275px);
+
+.content-list {
+  @include contentWrap();
+  @include media('<tablet') {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.content-item {
+  overflow: auto;
+  zoom: 1;
+  
+  display: block;
+  margin-bottom: rem(25px);
+  width: 100%;
+  height: $content-list-height;
+  @include card();
+  @include media('<tablet') {
+    margin-bottom: 0px;
+    height: auto;
+    border-bottom: rem(1px) solid $grey;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.item-img {
+  float: left;
+  width: 30%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.item-text {
+  float: left;
+  padding: 0 rem(50px);
+  width: 70%;
+  @include media('>tablet') {
+    @include vertically-align();
+  }
+  @include media('<tablet') {
+    width: 100%;
+    padding: rem(25px);
+  }
+}

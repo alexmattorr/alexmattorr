@@ -1,0 +1,65 @@
+// Project specific mixins
+// For other mixins see bower/knapsack
+@mixin contentWrap() {
+  display: none;
+  margin: 0 auto;
+  padding: rem(50px) rem(10px);
+  width: 90%;
+  max-width: $desktop;
+  height: auto;
+  @include media('<tablet') {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+@mixin card() {
+  background-color: $white;
+  box-shadow: 0 rem(2px) rem(4px) 0 rgba($black, 0.16),0 rem(2px) rem(10px) 0 rgba($black, 0.12);
+  transition: box-shadow ease-in-out .2s;
+  &:hover {
+    box-shadow: 0 rem(4px) rem(8px) 0 rgba($black, 0.2),0 rem(6px) rem(20px) 0 rgba($black, 0.19);
+  }
+}
+
+@mixin itemHover($color1) {
+  background-color: $color1;
+  &:hover {
+    background-color: $color2;
+    &.is-large {
+      background-color: $color1;
+    }
+  }
+  h3 { color: $color1;}
+}
+
+@mixin itemColors($color) {
+  .color-title {
+    color: $color;
+  }
+  .content-block-item a {
+    color: $color;
+    border-bottom: rem(1px) solid transparent;
+    transition: border ease-in-out .2s;
+    &:hover {
+      border-color: $color;
+    }
+  }
+  &.is-large {
+    background-color: $color !important;
+    border-left-color: $color;
+    border-right-color: $color;
+    @include media('<tablet') {
+      border-left-color: $grey;
+      border-right-color: $grey;
+    }
+  }
+  @include media('>tablet') {
+    &:hover {
+      background-color: $grey;
+      .group-title {
+        border-color: $grey;
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@
           <div class="overlay-item-overlay">
             <div class="vh">
               <h3><?php echo the_sub_field('overlay_title'); ?></h3>
-              <p><?php echo the_sub_field('overlay_text'); ?></p>
+              <div class="overlay-content"><?php echo the_sub_field('overlay_text'); ?></div>
             </div>
           </div>
         </div>

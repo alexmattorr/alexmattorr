@@ -295,7 +295,7 @@ table.acf_input tbody tr td {
 }
 
 table.acf_input tbody tr td.label {
-	width: 15%;
+	width: 24%;
 	vertical-align: top;
 	background: #F9F9F9;
 	border-top: 1px solid #f0f0f0;
@@ -384,10 +384,7 @@ ul.acf-checkbox-list {
 
 ul.acf-radio-list.horizontal,
 ul.acf-checkbox-list.horizontal {
-  overflow: auto;
-  height: 100px;
-  box-shadow: inset 0 -10px 10px -10px #ccc;
-  padding: 0 0 5px 5px;
+	overflow: hidden;
 }
 
 ul.acf-radio-list.horizontal li,

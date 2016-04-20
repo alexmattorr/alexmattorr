@@ -1,0 +1,28 @@
+body {
+  // @include debug();
+}
+
+// Max container based on $max-site-width:
+.max-container {
+  @include center($max-site-width);
+  background: $white;
+  position: relative;
+}
+
+// Responsive container
+.container {
+  @include center($desktop, $mobile-gutter);
+}
+
+// base styles
+blockquote {
+  margin: 0;
+
+  cite {
+    display: block;
+  }
+}
+
+nav ul {
+  @include inline-list();
+}

@@ -48,3 +48,112 @@ function voidx_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'voidx_widgets_init' );
+
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_home',
+		'title' => 'Home',
+		'fields' => array (
+			array (
+				'key' => 'field_56c2a866ad1e9',
+				'label' => 'Background Image',
+				'name' => 'background_image',
+				'type' => 'image',
+				'instructions' => 'Add the background image.',
+				'required' => 1,
+				'save_format' => 'url',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_56c2a7889e62e',
+				'label' => 'Intro Text',
+				'name' => 'intro_text',
+				'type' => 'text',
+				'instructions' => 'Add the intro text.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => 'An Introduction to:',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56c2a7a79e62f',
+				'label' => 'Button Label',
+				'name' => 'button_label',
+				'type' => 'text',
+				'instructions' => 'Add the button label.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => 'Learn More',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56c2a7c59e630',
+				'label' => 'Overlay Item',
+				'name' => 'overlay_item',
+				'type' => 'repeater',
+				'instructions' => 'Add an overlay item.',
+				'required' => 1,
+				'sub_fields' => array (
+					array (
+						'key' => 'field_56c2a7e49e631',
+						'label' => 'Overlay Title',
+						'name' => 'overlay_title',
+						'type' => 'text',
+						'instructions' => 'Add the overlay title.',
+						'required' => 1,
+						'column_width' => '',
+						'default_value' => '',
+						'placeholder' => 'Bio',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'none',
+						'maxlength' => '',
+					),
+					array (
+						'key' => 'field_56c2a80a9e632',
+						'label' => 'Overlay Text',
+						'name' => 'overlay_text',
+						'type' => 'wysiwyg',
+						'instructions' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi modi pariatur enim ipsa aliquam temporibus minima. Eos veniam ullam, ut.',
+						'required' => 1,
+						'column_width' => '',
+						'default_value' => '',
+						'toolbar' => 'basic',
+						'media_upload' => 'no',
+					),
+				),
+				'row_min' => 4,
+				'row_limit' => 4,
+				'layout' => 'row',
+				'button_label' => 'Add item.',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'index.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}

@@ -1,0 +1,25 @@
+{
+  "name": "kni-wp",
+  "homepage": "kni-wp",
+  "authors": [
+    {
+      "name": "KNI",
+      "email": "projects@kurtnoble.com",
+      "homepage": "kurtnoble.com"
+    }
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".sass-cache",
+    "build"
+  ],
+  "devDependencies": {
+    "html5-history-api": "^4.2.1",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}
