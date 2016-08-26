@@ -13,8 +13,8 @@
 
     <form action="">
       <h6>Contact Me</h6>
-      <input type="text" placeholder="name">
-      <input type="text" placeholder="email">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Email">
       <textarea placeholder="Message" name=""></textarea>
       <input type="submit" value="send">
     </form>
