@@ -1,13 +1,11 @@
 {
   "name": "kni-wp",
   "homepage": "kni-wp",
-  "authors": [
-    {
-      "name": "KNI",
-      "email": "projects@kurtnoble.com",
-      "homepage": "kurtnoble.com"
-    }
-  ],
+  "authors": [{
+    "name": "KNI",
+    "email": "projects@kurtnoble.com",
+    "homepage": "kurtnoble.com"
+  }],
   "ignore": [
     "**/.*",
     "node_modules",
@@ -23,7 +21,7 @@
     "jquery": "~2.1.4",
     "underscore": "~1.8.3",
     "include-media": "~1.4.1",
-    "jeet": "~6.1.2",
+    "jeet": "~6.1.1",
     "old-browsers": "~0.0.2",
     "knapsack": "~0.x.x",
     "normalize-libsass": "~1.0.3"

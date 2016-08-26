@@ -1,12 +1,38 @@
 (function($) {
 
-
-  function addInvalid() {
-    var $input = $('input, textarea, select').not(
-        ':input[type=button], :input[type=submit], :input[type=reset]'),
+  function inputValidateOnChange() {
+    var $input = $('.input-required'),
       invalid = 'invalid';
 
-    $input.removeClass(invalid);
+    $input.bind('change, input', function() {
+      if ($(this).val() !== '') {
+        $(this).removeClass(invalid);
+      } else {
+        $(this).addClass(invalid);
+      }
+    });
+  }
+
+  function phoneFormatter() {
+    var $phoneField = $('input[type=text].phone');
+
+    $phoneField.on('input', function() {
+      var number = $(this).val().replace(/[^\d]/g, '');
+
+      if (number.length === 7) {
+        number = number.replace(/(\d{3})(\d{4})/, "$1-$2");
+      } else if (number.length === 10) {
+        number = number.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+      }
+
+      $(this).val(number);
+    });
+  }
+
+  function validate() {
+    var $input = $('.input-required'),
+      invalid = 'invalid';
+
     $input.each(function() {
       var $self = $(this),
         value = $self.val();
@@ -17,54 +43,48 @@
     });
   }
 
-  function formData() {
-    var name = $("#name").val(),
-      tel = $('#tel').val(),
-      email = $('#email').val(),
-      message = $('#message').val(),
-      homeURL = location.origin,
-      thankURL = homeURL + '/thank-you',
-      // google ajax post url
-      url = '';
+  function sendData(form, formUrl) {
+    var $form = $(form),
+      data = $form.serialize();
 
     $.ajax({
-      url: url,
-      data: {
-        // add google form id here
-        "": name,
-        "": tel,
-        "": email,
-        "": message
-      },
-      type: "POST",
-      crossDomain: true,
+      url: formUrl,
+      data: data,
       dataType: "xml",
       complete: function() {
-        window.location = thankURL;
+        console.log(data);
       }
     });
   }
 
-  function formSubmit() {
-    var $submit = $('#submit');
+  function formSubmit(button, formSelector, googleUrl) {
+    var $submit = $(button),
+      form = formSelector,
+      url = googleUrl;
 
-    $submit.click(function() {
-      var name = $("#name").val(),
-        tel = $('#tel').val(),
-        email = $('#email').val(),
-        message = $('#message').val();
+    $submit.click(function(e) {
+      e.preventDefault();
+      validate();
 
-      if (name === '' || name === null || tel === '' || tel === null ||
-        email ===
-        '' || email == null) {
-        addInvalid();
-      } else {
-        formData();
+      var isValid = true;
+
+      $(form).find('.input-required').each(function() {
+        if ($(this).val() === '') {
+          isValid = false;
+        }
+      });
+
+      if (isValid === true) {
+        sendData(form, url);
       }
+      return isValid;
     });
   }
+
 
   $(function() {
-    formSubmit();
+    inputValidateOnChange();
+    phoneFormatter();
+
   });
 }(jQuery));
