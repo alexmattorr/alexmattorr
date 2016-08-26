@@ -71,9 +71,6 @@
 
   @include media('<tablet-l') {
     display: none;
-    &.item-active {
-      display: block;
-    }
   }
 }
 

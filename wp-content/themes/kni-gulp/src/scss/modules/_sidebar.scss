@@ -77,6 +77,11 @@
   }
 
   @include media('<tablet-l') {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
     li {
       height: 80px;
     }
@@ -97,5 +102,12 @@
     border: 1px solid gray;
     border-radius: 0;
     outline: 0;
+  }
+}
+
+#work-sidebar {
+  @include media('<tablet-l') {
+    position: relative;
+    height: 100vh;
   }
 }
