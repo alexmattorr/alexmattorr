@@ -1,17 +1,18 @@
-.sidebar {
-  position: fixed;
-  z-index: 90;
-  top: 0;
-  left: 0;
-  float: left;
-  width: 30%;
-  height: 100vh;
-  border-right: 1px solid gray;
-  // box-shadow: rem(2px) 0 rem(25px) rem(-2px) black;
-}
+@include media('>tablet-l') {
+  .sidebar {
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid gray;
+  }
 
-.sidebar-info, .sidebar-items {
-  height: 50vh;
+  .sidebar-info, .sidebar-items {
+    height: 50vh;
+  }
 }
 
 .sidebar-info {
@@ -74,38 +75,27 @@
       // border: rem(5px) solid dodgerblue;
     }
   }
+
+  @include media('<tablet-l') {
+    li {
+      height: 80px;
+    }
+  }
 }
 
-
-.content-info {
-  // @include vertically-align();
-  position: absolute;
+.sidebar-full {
   padding: 100px 25px 25px;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity ease .2s;
 
-  &.item-active {
-    opacity: 1;
-    z-index: 1;
+  h1, h5 {
+    margin: 0;
   }
 
-  h2 {
-    margin-bottom: 0;
-  }
-
-  p {
-    margin: 15px 0;
-  }
-
-  a {
-    border-bottom-style: solid;
-    border-bottom-width: 0;
-
-    &:hover {
-      border-bottom-width: 1px;
-    }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 0;
+    outline: 0;
   }
 }

@@ -1,4 +1,4 @@
-<article id="work-content" class="content work-item">
+<section id="work-content" class="content work-item">
 
   <?php
     $counter = 0;
@@ -9,4 +9,4 @@
     </div>
   <?php $counter++; endwhile; endif; wp_reset_query();?>
 
-</article>
+</section>

@@ -1,3 +1,34 @@
+@include media('>tablet-l') {
+  .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+  }
+
+  .content-image {
+    position: absolute;
+    top: 55px;
+    left: 0;
+  }
+}
+
+.content-info {
+  position: absolute;
+  padding: 100px 25px 25px;
+  top: 0;
+  left: 0;
+
+  @include media('<tablet-l') {
+    position: relative;
+    display: none;
+    &.item-active {
+      display: block;
+    }
+  }
+}
+
 .content,
 .sidebar {
   transition: all ease-in-out .6s;
@@ -26,50 +57,50 @@
   }
 }
 
-.content {
-  position: absolute;;
-  top: 0;
-  right: 0;
-  width: 70%;
-  height: 100vh;
-}
-
 .content-image {
-  position: absolute;
-  top: 55px;
-  left: 0;
   z-index: -1;
   opacity: 0;
-  // padding: rem(50px) rem(25px);
   width: 100%;
   height: 100%;
-  color: white;
-  text-align: center;
-
   transition: opacity ease .3s;
-
-  h2, h6 {
-    margin: rem(0px);
-  }
-
-  h6 {
-    font-family: $base-font;
-  }
-
-  .btn {
-    margin-top: rem(100px);
-    background-color: transparent !important;
-    border: rem(1px) solid white;
-    border-radius: 0px;
-  }
-
-  h2, h6, .btn {
-    position: relative;
-    z-index: 99;
-  }
 
   &.item-active {
     z-index: 1;
     opacity: 1;
+  }
+
+  @include media('<tablet-l') {
+    display: none;
+    &.item-active {
+      display: block;
+    }
+  }
+}
+
+.content-info {
+  opacity: 0;
+  z-index: -1;
+  transition: opacity ease .2s;
+
+  &.item-active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  a {
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+
+    &:hover {
+      border-bottom-width: 1px;
+    }
   }
 }

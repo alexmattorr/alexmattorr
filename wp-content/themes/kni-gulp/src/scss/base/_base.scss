@@ -1,6 +1,9 @@
 body {
-  // @include debug();
   overflow: hidden;
+
+  @include media('<tablet-l') {
+    overflow: scroll;
+  }
 }
 
 // Max container based on $max-site-width:
@@ -26,4 +29,15 @@ blockquote {
 
 nav ul {
   @include inline-list();
+}
+
+@include media('<tablet-l') {
+  .content,
+  .sidebar {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
 }
