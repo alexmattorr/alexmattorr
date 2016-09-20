@@ -1,0 +1,21 @@
+a.btn,
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  padding: 15px 25px;
+  background-color: $white;
+  font-family: $head-font;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  border: 1px solid $border;
+  border-radius: 0;
+  outline: 0;
+  transition: all ease-in-out .3s;
+
+  &:hover {
+    border-color: $teal;
+    color: $teal;
+  }
+}
