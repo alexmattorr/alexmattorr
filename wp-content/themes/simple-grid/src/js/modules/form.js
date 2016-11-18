@@ -83,8 +83,7 @@
 
 
   $(function() {
-    inputValidateOnChange();
-    phoneFormatter();
-
+    // inputValidateOnChange();
+    // phoneFormatter();
   });
 }(jQuery));

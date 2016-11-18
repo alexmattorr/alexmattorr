@@ -24,7 +24,8 @@
         data-item="<?php echo $item_counter; ?>"
         class="sidebar-item content-item <?php if($item_counter === 0) { echo 'item-active'; } ?>"
         style="background-image: url(<?php echo the_sub_field('sidebar_image'); ?>); color: <?php echo the_sub_field('brand_color'); ?>;">
-        <img class="logo" src="<?php the_sub_field('logo'); ?>">
+        <!-- <img class="logo" src="<?php // the_sub_field('logo'); ?>"> -->
+        <h6 class="logo"><?php the_sub_field('title'); ?></h6>
         <div class="logo-overlay" style="background-color: <?php echo the_sub_field('brand_color'); ?>;"></div>
       </li>
     <?php $item_counter++; endwhile; endif; wp_reset_query();?>
